@@ -1,0 +1,82 @@
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container{
+    display: flex;
+    /* OBS: para hacer referencia a una class solo ¨.nombre" */
+    justify-content: space-between;
+    background-color: indianred;
+    height: 10 vh;
+    /* vh unidad de medida que se adapta a la pantalla en la que estoy viendo */
+    align-items: center;
+}
+
+/* Selector para hijos directos ....*/
+.flex-container>ul{
+    display: flex;
+    list-style-type: none;
+    word-spacing: normal;
+    /* obs se le agregan a los hijos directod de ul, LI */
+}
+
+ul li a{
+    text-decoration: none;
+    /* Saca linea de subrayado */
+    font-style: black;
+
+    
+    /* para sacar diseño de hipervinculos */
+}
+ul>li{
+    margin: 1rem;
+    /* obs rem es la mas recomendada pero recordar que hay que poner el porcentaje al principio */
+}
+/* @font-face {
+    font-family: ;
+    src: url(); */
+    /* para vincular tipos de letra que se encuentran en una carpeta */
+.tituloanimado{
+    /* animate__heartBeat */ 
+    /* lo de arriba es un nombre de una animacinon */
+
+}
+.titulo{
+    font-size: 5rem;
+    color: aqua;
+}
+.logo{
+    height: 0.5vh;
+    /* para que se adapte */
+    margin: 2rem 1rem 1rem 2rem;
+    width: 4vw;
+    border-radius: 10%;
+    box-shadow: 0.5rem 1rem grey;
+    /* 1er lugar grosor sombra horizontal, 2do lugar grosor sombra vertical,m 3er color */
+    /* con - te da vuelta la sombra */
+}
+.flex-container-1{
+    display: flex;
+    /* cada caja en linea */
+    justify-content: space-between;
+    /* cada linea separada */
+    background-color: antiquewhite;
+}
+
+#iconowpp{
+    justify-content: right;
+    height: 10vh;
+    /* para que se adapte */
+    width: 8vw;
+    position: right;    
+}
+
+/* IMPLEMENTACION DE PUNTOS DE CORTE */
+@media screen {
+    
+}

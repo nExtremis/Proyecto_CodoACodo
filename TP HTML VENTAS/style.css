@@ -1,5 +1,7 @@
 html{
     font-size: 62.5%;
+    /*tipo de letra*/
+    font-family: 'Roboto Mono', monospace;
 }
 
 *{
@@ -37,10 +39,8 @@ ul>li{
     margin: 1rem;
     /* obs rem es la mas recomendada pero recordar que hay que poner el porcentaje al principio */
 }
-/* @font-face {
-    font-family: ;
-    src: url(); */
-    /* para vincular tipos de letra que se encuentran en una carpeta */
+
+   
 .tituloanimado{
     /* animate__heartBeat */ 
     /* lo de arriba es un nombre de una animacinon */

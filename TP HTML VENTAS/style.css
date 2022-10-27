@@ -40,12 +40,26 @@ ul>li{
     /* obs rem es la mas recomendada pero recordar que hay que poner el porcentaje al principio */
 }
 
-   
-.tituloanimado{
-    /* animate__heartBeat */ 
+      /* animate__heartBeat */ 
+.tituloanimado  {
+        animation-duration: 3s;
+        animation-name: slidein;
+      }
+
+      @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 300%
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
     /* lo de arriba es un nombre de una animacinon */
 
-}
+
 .titulo{
     font-size: 5rem;
     color: aqua;
@@ -88,4 +102,6 @@ ul>li{
 @media screen and (min-width: 1280px) {
 .container{
 }
+    
+  
 }

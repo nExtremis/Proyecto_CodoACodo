@@ -65,10 +65,10 @@ ul>li{
     color: aqua;
 }
 .logo{
-    height: 0.5vh;
+    height: 20vh;
     /* para que se adapte */
     margin: 2rem 1rem 1rem 2rem;
-    width: 4vw;
+    width: 10vw;
     border-radius: 10%;
     box-shadow: 0.5rem 1rem grey;
     /* 1er lugar grosor sombra horizontal, 2do lugar grosor sombra vertical,m 3er color */

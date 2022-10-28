@@ -117,7 +117,7 @@ ul>li{
 
 
       /* animate__heartBeat */ 
-.tituloanimado  {
+.tituloanimado {
         animation-duration: 5s;
         animation-name: slidein;
         animation-delay: 10s;
@@ -261,4 +261,19 @@ ul>li{
             color: black;
     }
 
+
+/*mujer*/
+.bikinis {
+    background: linear-gradient(
+        50deg,
+        rgb(192, 108, 122),
+        white,
+        rgb(138, 66, 138)
+    );
+}
+.mujer {
+display: flex;
+justify-content: space-between;
+padding: 10%;
+}
 

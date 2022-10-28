@@ -133,21 +133,7 @@ ul>li{
 .container{ color: black;
 }
 }
-.dropdown-menu{
-    background-color:  rgb(178, 86, 167) !important; /*color de prueba del fonde*/
-    border-radius: 2rem !important; /*tipo de borde*/
-}
 
-.dropdown-menu>li a{/*solo en hipervinculos*/
-    background-color:  rgb(143, 129, 156) !important; /*color de prueba*/
-    text-decoration: none !important; /*saca la linea debajo del hipervinculo */
-    color: black !important; /*todas las letras negras*/
-}
-.dropdown-menu> li button:hover{
-    background-color: brown !important; /* color que se va a poner cuando pasemos sobre las opciones del menu*/
-    border-radius: 2rem;
-    box-shadow: 5px 5px 5px 5px rgb(23, 2, 44);
-}
 
 /* menu desplegable*/
 .flex-container{
@@ -194,6 +180,13 @@ ul>li{
         align-items: center;
         gap: 1rem;
         padding-top: 1.5rem;
+    }
+.item {
+
+            background-color:rgb(222, 150, 150);
+            border-radius: 01rem;
+            box-shadow: 4px 4px 4px 4px rgb(103, 44, 163);
+            color: black;
     }
 
     .container{

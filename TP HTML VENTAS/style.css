@@ -42,7 +42,7 @@ ul>li{
 .tituloanimado  {
         animation-duration: 5s;
         animation-name: slidein;
-        animation-delay: 7s;
+        animation-delay: 10s;
         animation-iteration-count: infinite;
       }
 
@@ -65,10 +65,10 @@ ul>li{
     color: aqua;
 }
 .logo{
-    height: 20vh;
+    height: 0.5vh;
     /* para que se adapte */
     margin: 2rem 1rem 1rem 2rem;
-    width: 10vw;
+    width: 4vw;
     border-radius: 10%;
     box-shadow: 0.5rem 1rem grey;
     /* 1er lugar grosor sombra horizontal, 2do lugar grosor sombra vertical,m 3er color */
@@ -86,7 +86,6 @@ ul>li{
     background-color: aquamarine;
     grid-template-rows: 4fr 1fr;
     padding: 2.5rem;
-
 
 }
 .gridcontainer>div>h3{

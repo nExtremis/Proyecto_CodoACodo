@@ -83,7 +83,7 @@ ul>li{
 }
 .mallas{
     display: grid;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     grid-template-rows: 4fr 1fr;
     padding: 2.5rem;
 

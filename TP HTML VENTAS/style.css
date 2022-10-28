@@ -3,6 +3,14 @@ html{
     /*tipo de letra*/
     font-family: 'Roboto Mono', monospace;
 }
+body {
+    background: linear-gradient(
+        90deg,
+        gray,
+        white,
+       black
+    );
+}
 
 *{
     margin: 0;
@@ -116,15 +124,15 @@ ul>li{
 
 /* IMPLEMENTACION DE PUNTOS DE CORTE */
 @media screen and (max-width: 640px){
-    .container{
+    .container{ color: black;
 }
 }
 @media screen and (min-width: 640px) and (max-width: 1280px) {
-.container{
+.container{ color: black;
 }
 }
 @media screen and (min-width: 1280px) {
-.container{
+.container{ color: black;
 }
 }
 .dropdown-menu{
@@ -145,7 +153,7 @@ ul>li{
 
 /* menu desplegable*/
 .flex-container{
-    background-color: gray;
+    background-color:  rgb(79, 128, 127);
     position: fixed;
     top: 0;
     right: 0;

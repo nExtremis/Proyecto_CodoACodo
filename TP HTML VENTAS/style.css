@@ -198,7 +198,10 @@ ul>li{
 
     .container{
         margin: auto;
-        background-color: white;
+        background: linear-gradient(
+        90deg,
+        gray,
+        white);
         width: 800px;
         padding: 30px;
       }
@@ -237,7 +240,7 @@ ul>li{
       }
       
       ul.slider li:target {
-          opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+          opacity: i; /*Mostramos el <li> del enlace que pulsemos*/
       }
       
       .menu{

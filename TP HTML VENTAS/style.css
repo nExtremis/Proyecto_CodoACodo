@@ -207,11 +207,8 @@ ul>li{
 
 
 /* menu desplegable*/
-.flex-container{
-    display: flex;
 
-}
-.dropdown{
+.flex-container{
     background-color:  rgb(79, 128, 127);
     position: fixed;
     top: 0;

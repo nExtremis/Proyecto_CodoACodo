@@ -10,7 +10,6 @@ html{
 }
 .flex-container{
     display: flex;
-    /* OBS: para hacer referencia a una class solo ¨.nombre" */
     justify-content: space-between;
     background-color: indianred;
     height: 10 vh;
@@ -83,18 +82,21 @@ ul>li{
     row-gap: 4rem;    
 }
 .mallas{
-    display: flex;
+    display: grid;
     background-color: aquamarine;
+    grid-template-rows: 4fr 1fr;
     padding: 2.5rem;
+
 
 }
 .gridcontainer>div>h3{
-    align-items: center;
+    align-items:center;
+    text-align: center;
     font-weight: bold;
     box-sizing: border-box;
     border-radius: 1rem black;
     padding: 5px;
-    background-color: aqua;
+    
 
 }
 .flex-container-1{

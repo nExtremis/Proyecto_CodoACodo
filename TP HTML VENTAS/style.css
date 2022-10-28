@@ -128,15 +128,64 @@ ul>li{
 }
 }
 .dropdown-menu{
-    background-color: aqua !important; /*color de prueba del fonde*/
+    background-color:  rgb(178, 86, 167) !important; /*color de prueba del fonde*/
     border-radius: 2rem !important; /*tipo de borde*/
 }
 
 .dropdown-menu>li a{/*solo en hipervinculos*/
-    background-color: blueviolet !important; /*color de prueba*/
+    background-color:  rgb(143, 129, 156) !important; /*color de prueba*/
     text-decoration: none !important; /*saca la linea debajo del hipervinculo */
     color: black !important; /*todas las letras negras*/
 }
 .dropdown-menu> li button:hover{
     background-color: brown !important; /* color que se va a poner cuando pasemos sobre las opciones del menu*/
+    border-radius: 2rem;
+    box-shadow: 5px 5px 5px 5px rgb(23, 2, 44);
 }
+
+/* menu desplegable*/
+.flex-container{
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: var(--nav-widht);
+    transform: translateX(100%);
+    transition: transform .6s;
+    }
+    
+    label[for="toggle-nav"]{
+        font-size: 3.5rem;
+        width: 3.5rem;
+        text-align: center;
+        position: absolute;
+        background-color: black;
+        color: aliceblue;
+        top: 0;
+        right: 0;
+        transition: transform .6s;
+    }
+    #toggle-nav, #close-nav{
+        display: inline;
+    
+    }
+    #toggle-nav:checked ~ nav{
+        transform: translateX(0%);
+    }
+    #toggle-nav:checked + label{
+        transform: translateX(calc(-1 * var(--nav-width)))
+    }
+    #toggle-nav:checked + label #close-nav{
+        display: initial;
+    }
+    #toggle-nav:checked + label #open-nav{
+        display: none;
+    }
+    .flex-container > .dropdown{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding-top: 1.5rem;
+    }

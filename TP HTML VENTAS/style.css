@@ -19,7 +19,7 @@ body {
 .flex-container{
     display: flex;
     justify-content: space-between;
-    background-color: indianred;
+    
     height: 10 vh;
     /* vh unidad de medida que se adapta a la pantalla en la que estoy viendo */
     align-items: center;

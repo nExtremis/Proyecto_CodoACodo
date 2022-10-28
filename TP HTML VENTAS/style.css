@@ -152,7 +152,7 @@ ul>li{
 }
 
 /* menu desplegable*/
-.flex-container{
+.menu{
     background-color:  rgb(79, 128, 127);
     position: fixed;
     top: 0;
@@ -190,7 +190,7 @@ ul>li{
     #toggle-nav:checked + label #open-nav{
         display: none;
     }
-    .flex-container > .dropdown{
+    .menu > .dropdown{
         display: flex;
         flex-direction: column;
         align-items: center;

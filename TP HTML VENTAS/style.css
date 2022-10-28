@@ -77,7 +77,7 @@ ul>li{
 }
 .gridcontainer{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     grid-template-rows: repeat(2, 15rem);
     column-gap: 3rem;
     row-gap: 0.5rem;    
@@ -88,7 +88,7 @@ ul>li{
     padding: 2.5rem;
 
 }
-.precio{
+.gridcontainer>div>h3{
     align-items: center;
     font-weight: bold;
     box-sizing: border-box;

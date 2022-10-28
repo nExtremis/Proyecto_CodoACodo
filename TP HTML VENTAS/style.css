@@ -8,7 +8,6 @@ html{
     margin: 0;
     padding: 0;
 }
-
 .flex-container{
     display: flex;
     justify-content: space-between;
@@ -20,18 +19,23 @@ html{
 
 /* Selector para hijos directos ....*/
 .flex-container>ul{
-    display: flex;
+    display: flex; 
     list-style-type: none;
     word-spacing: normal;
-
+    /* obs se le agregan a los hijos directod de ul, LI */
 }
 
 ul li a{
     text-decoration: none;
+    /* Saca linea de subrayado */
     font-style: black;
+
+    
+    /* para sacar diseño de hipervinculos */
 }
 ul>li{
     margin: 1rem;
+    /* obs rem es la mas recomendada pero recordar que hay que poner el porcentaje al principio */
 }
 
       /* animate__heartBeat */ 
@@ -40,10 +44,6 @@ ul>li{
         animation-name: slidein;
         animation-delay: 10s;
         animation-iteration-count: infinite;
-        font-weight: bold;
-        background-color: lightblue;
-        text-decoration: solid;
-        font-display: space-between;
       }
 
       @keyframes slidein {
@@ -59,9 +59,6 @@ ul>li{
       }
     /* lo de arriba es un nombre de una animacinon */
 
-.cuerpo{
-    background-color: lightblue;
-}
 
 .titulo{
     font-size: 5rem;
@@ -73,7 +70,7 @@ ul>li{
     margin: 2rem 1rem 1rem 2rem;
     width: 10vw;
     border-radius: 10%;
-    /* box-shadow: 0.5rem 1rem grey; */
+    box-shadow: 0.5rem 1rem grey;
     /* 1er lugar grosor sombra horizontal, 2do lugar grosor sombra vertical,m 3er color */
     /* con - te da vuelta la sombra */
 }
@@ -86,7 +83,7 @@ ul>li{
 }
 .mallas{
     display: grid;
-    /* background-color: aquamarine; */
+    background-color: aquamarine;
     grid-template-rows: 4fr 1fr;
     padding: 2.5rem;
 
@@ -129,6 +126,17 @@ ul>li{
 @media screen and (min-width: 1280px) {
 .container{
 }
-    
-  
+}
+.dropdown-menu{
+    background-color: aqua !important; /*color de prueba del fonde*/
+    border-radius: 2rem !important; /*tipo de borde*/
+}
+
+.dropdown-menu>li a{/*solo en hipervinculos*/
+    background-color: blueviolet !important; /*color de prueba*/
+    text-decoration: none !important; /*saca la linea debajo del hipervinculo */
+    color: black !important; /*todas las letras negras*/
+}
+.dropdown-menu> li button:hover{
+    background-color: brown !important; /* color que se va a poner cuando pasemos sobre las opciones del menu*/
 }

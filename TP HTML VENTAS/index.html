@@ -5,8 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VDM</title>
+    
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="bootstrap-5.2.1-dist/js/jquery.min.js"></script>
+    <script src="bootstrap-5.2.1-dist/js/popper.min.js"></script>
+    <script src="bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
+    
     <link rel="stylesheet" href="https://animate.style/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,21 +24,22 @@
 
     <!-- ENCABEZADO -->
 <header>
-
     <nav class="flex-container">
         <!-- etiquetas de navegacion 
          abajo, listado de hipervinculos que voy a vincular -->
         <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Menu
             </button>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <li><button class="dropdown-item" type="button">Inicio</button></li>
                 <li><button class="dropdown-item" type="button"> 
                     <a href="formulario.html">Contacto</a> 
-                </button></li>
+                    </button></li>
                 <li><button class="dropdown-item" type="button">Nosotros</button></li>
             </ul>
-        </div>    
+        </div>
+        
         <!-- TITULO DE MARCA CENTRADO -->
         <h1 class="titulo">VDM</h1>
         <!-- LOGO -->
@@ -42,20 +48,18 @@
 </header>
  
 <!-- CUERPO PRINCIPAL -->
-<main class="cuerpo">
+<main>
     <!-- SECCION, DONDE MOSTRAMOS FOTOS DINAMICAS DEL VERANO -->
     <section class="flex-container-1">
         <!-- divido la seccion en 5 partes -->
-        <div><img src="https://picsum.photos/200/300?random=1" alt="imagen"></div>
-        <div><img src="https://picsum.photos/200/300?random=2" alt="imagen"></div>
-        <div><img src="https://picsum.photos/200/300?random=3" alt="imagen"></div>
+        <div><img src="https://picsum.photos/200/300" alt="imagen"></div>
+        <div><img src="https://picsum.photos/200/300" alt="imagen"></div>
+        <div><img src="https://picsum.photos/200/300" alt="imagen"></div>
         <div><img src="https://picsum.photos/200/300" alt="imagen"></div>
     </section>
     <section>
         <!-- ESTE TITULO IRTIA CON ANIMACION -->
-        <br>
-        <br>
-        <h1 class="tituloanimado">SUMMER 2023 &#160; SUMMER 2023 &nbsp; SUMMER 2023</h1>
+        <h1 class="tituloanimado">SUMMER 2023</h1>
         <br>
         <br>
         <br>
@@ -130,6 +134,9 @@
     <section></section>
     <section></section>
     <section></section>
+    
+    
+    
 </main>
 </body>    
     <footer>
@@ -139,7 +146,7 @@
         <div>
             <!-- <a href="whatsapp.png" title="whatsapp iconos">Whatsapp iconos creados por Freepik - Flaticon</a> -->
             <a href="+5491168872408">
-                <img id="iconowpp" src="whatsapp.png" alt="foto de whatsapp">
+                <img id="iconowpp" src="https://www.flaticon.es/icono-gratis/whatsapp_2111728?term=whatsapp&page=1&position=16&page=1&position=16&related_id=2111728&origin=search" alt="foto de whatsapp">
             </a>
 
             
@@ -150,6 +157,6 @@
 
 
 
-    <script src="validacion.js"></script>
+
 </body>
 </html>

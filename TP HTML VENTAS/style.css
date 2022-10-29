@@ -3,6 +3,7 @@ html{
     /*tipo de letra*/
     font-family: 'Roboto Mono', monospace;
 }
+/* ESTILO DEL CUERPO */
 body {
     background: linear-gradient(
         90deg,
@@ -14,16 +15,16 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* ETIQUETAS DE NAVEGACION */
 .flex-container{
     display: flex;
     justify-content: space-between;
-    
     height: 10 vh;
-    /* vh unidad de medida que se adapta a la pantalla en la que estoy viendo */
     align-items: center;
 }
 
-/* Selector para hijos directos ....*/
+/* Selector para hijos directos*/
 .flex-container>ul{
     display: flex; 
     list-style-type: none;
@@ -45,78 +46,78 @@ ul>li{
 }
 
 
-    /*  SLIDER DE IMAGENES */
-    .slidercontainer{
-        margin: auto;
-        background: linear-gradient(
-        90deg,
-        gray,
-        white);
-        width: 800px;
-        padding: 30px;
-      }
-      
-      ul, li {
-          padding: 0;
-          margin: 0;
-          list-style: none;
-      }
-      
-      ul.slider{
-        position: relative;
-        width: 800px;
-        height: 300px;
-      }
-      
-      ul.slider li {
-          position: absolute;
-          left: 0px;
-          top: 0px;
-          opacity: 0;
-          width: inherit;
-          height: inherit;
-          transition: opacity .5s;
-          background:#fff;
-      }
-      
-      ul.slider li img{
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-      }
-      
-      ul.slider li:first-child {
-          opacity: 1; /*Mostramos el primer <li>*/
-      }
-      
-      ul.slider li:target {
-          opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
-      }
-      
-      .menu{
-        text-align: center;
-        margin: 20px;
-      }
-      
-      .menu li{
-        display: inline-block;
-        text-align: center;
-      }
-      
-      .menu li a{
-        display: inline-block;
-        color: white;
-        text-decoration: none;
-        background-color: grey;
-        padding: 10px;
-        width: 20px;
-        height: 20px;
-        font-size: 20px;
-        border-radius: 100%;
-      }
+/*  SLIDER DE IMAGENES */
+.slidercontainer{
+    margin: auto;
+    background: linear-gradient(
+    90deg,
+    gray,
+    white);
+    width: 800px;
+    padding: 30px;
+  }
+  
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  ul.slider{
+    position: relative;
+    width: 800px;
+    height: 300px;
+  }
+  
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:#fff;
+  }
+  
+  ul.slider li img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  ul.slider li:first-child {
+      opacity: 1; /*Mostramos el primer <li>*/
+  }
+  
+  ul.slider li:target {
+      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  }
+  
+  .menu{
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+  }
 
 
-      /* animate__heartBeat */ 
+      /*TITULO CON ANIMACION */ 
 .tituloanimado {
         animation-duration: 5s;
         animation-name: slidein;
@@ -135,13 +136,12 @@ ul>li{
           width: 100%;
         }
       }
-    /* lo de arriba es un nombre de una animacinon */
-
 
 .titulo{
     font-size: 5rem;
     color: aqua;
 }
+
 .logo{
     height: 20vh;
     /* para que se adapte */
@@ -152,6 +152,8 @@ ul>li{
     /* 1er lugar grosor sombra horizontal, 2do lugar grosor sombra vertical,m 3er color */
     /* con - te da vuelta la sombra */
 }
+
+/* ESTRUCTURA RESPONSIVE DONDE AGREGAMOS LAS CAJAS CON LAS MALLAS Y SUS RESPECTIVOS PRECIOS */
 .gridcontainer{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
@@ -172,15 +174,6 @@ ul>li{
     box-sizing: border-box;
     border-radius: 1rem black;
     padding: 5px;
-    
-
-}
-.flex-container-1{
-    display: flex;
-    /* cada caja en linea */
-    justify-content: space-between;
-    /* cada linea separada */
-    
 }
 
 #iconowpp{
@@ -189,6 +182,11 @@ ul>li{
     width: 100px;
     position: right;
 
+}
+#iconowpp>h4{
+    text-decoration: none;
+    /* Saca linea de subrayado */
+    font-style: black;
 }
 
 /* IMPLEMENTACION DE PUNTOS DE CORTE */
@@ -206,7 +204,7 @@ ul>li{
 }
 
 
-/* menu desplegable*/
+/*MENU DESPLEGABLE*/
 
 .flex-container{
     background-color:  rgb(79, 128, 127);
@@ -253,16 +251,18 @@ ul>li{
         gap: 1rem;
         padding-top: 1.5rem;
     }
+
+
 .item {
 
-            background-color:rgb(222, 150, 150);
-            border-radius: 01rem;
-            box-shadow: 4px 4px 4px 4px rgb(103, 44, 163);
-            color: black;
+        background-color:rgb(222, 150, 150);
+        border-radius: 01rem;
+        box-shadow: 4px 4px 4px 4px rgb(103, 44, 163);
+        color: black;
     }
 
 
-/*mujer*/
+/*SECCION MUJERES*/
 .bikinis {
     background: linear-gradient(
         50deg,
